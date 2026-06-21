@@ -43,9 +43,9 @@ TF_LITE_MICRO_TEST(TestInvoke) {
 
   // Map the model into a usable data structure. This doesn't involve any
   // copying or parsing, it's a very lightweight operation.
-  /* [빈칸] person_detect_model_data.h에 선언된 모델 배열을 로드하세요. */
+  /* [빈칸] person_detect_model_data.h에 선언된 모델 배열(g_person_detect_model_data)을 로드하세요. */
   /* [힌트] tflite 네임스페이스(::tflite::)에서 GetModel 함수를 활용합니다. */
-  const tflite::Model* model = ?
+  const tflite::Model* model = ?(?)
   if (model->version() != TFLITE_SCHEMA_VERSION) {
     TF_LITE_REPORT_ERROR(error_reporter,
                          "Model provided is schema version %d not equal "
